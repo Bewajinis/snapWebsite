@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+    </head>
+  
+        <style>
+            .is-toggled {
+                background-color: black;
+                color: white;
+            }
+        </style>
+    <body>
+        <button class="js-categoryButton" onclick="
+        ">Gaming</button>
+
+
+        <button class="js-categoryButton" onclick="
+        ">Music</button>
+
+        <button class="js-categoryButton" onclick="
+        ">Tech</button>
+
+        
+        <script>
+            const categoryButtons = document.querySelectorAll('.js-categoryButton');
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', ()=>{
+                    categoryButtons.forEach(btn => btn.classList.remove('is-toggled'));
+                    button.classList.add('is-toggled');
+                });
+            });
+
+
+
+        // function Greet(name){
+        //     console.log(`Hello ${name}`);
+        //     if(!name){
+        //         console.log('name is undefined')
+        //     }
+        // }
+        
+        // Greet('Bewaji');
+        
+        // function convertFahrenheit(celsius){
+        //     console.log((celsius *9/5)+32);
+        // };
+        
+        // convertFahrenheit(25);
+        
+        // function convertClesius(fahrenheit){
+        //     console.log((fahrenheit -32)*5/9);
+        // };
+        
+        // convertClesius(86);
+        
+        // function convertTemperature(degrees, unit){
+        //     if(unit === 'C'){
+        //         console.log((degrees *9/5)+32);
+        //     } else if(unit === 'F'){
+        //         console.log((degrees -32)*5/9);
+        //     } else {
+        //         console.log('Invalid unit');
+        //     }
+        // }
+        // convertTemperature(25, 'C');
+        // convertTemperature(86, 'F');
+        
+        // function convertLength(length, from, to) {
+        //     if (length === to) {
+        //         return length; 
+        //     }
+        //     if (from === "km" && to === "miles") {
+        //         return length / 1.6; 
+        //     } else if (from === "miles" && to === "km") {
+        //         return length * 1.6;
+        //     } else {
+        //         return "Invalid units or conversion not supported.";
+        //     }
+        // }
+        // console.log(convertLength(50, "km", "miles"));
+        // console.log(convertLength(32, "miles", "km"));
+        // console.log(convertLength(50, "km"));
+        
+        
+        // Ojects Exercise
+        
+        // function comparePrice(product1, product2){
+        //     if (product1.price >= product2.price) {
+        //         console.log(product2);
+        //     } else {
+        //         console.log(product1);
+        //     }
+        // };
+        
+        // const basketball = {
+        //     name: 'basketball', 
+        //     price: 2000
+        // };
+        
+        // const football = {
+        //     name: 'football',
+        //     price: 1500
+        // };
+        
+        // comparePrice(basketball, football);
+        
+        
+        // const basketball = {
+        //     name: 'basketball', 
+        //     price: 2000
+        // };
+        // const football = {
+        //     name: 'football',
+        //     price: 2000
+        // };
+        
+        // function isSameProduct(product1, product2) {
+        //     if  (product1 === product2) {
+        //         console.log(true);
+        //     } else {
+        //         console.log(false);
+        //     }
+        
+        // }
+        
+        // isSameProduct(basketball, football);
+
+        // const headButton = document.querySelector('.js-headButton');
+        // const tailButton = document.querySelector('.js-tailButton');
+        // const result = document.querySelector('.js-result');
+
+        // headButton.addEventListener('click', function() {
+        //     result.innerHTML = 'You Chose: Heads';
+        // });
+
+        // tailButton.addEventListener('click', function() {
+        //     result.innerHTML = 'You Chose: Tails';
+        // });
+
+    </script>
+</body>
+</html>

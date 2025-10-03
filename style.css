@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.snap_page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.nav_menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.snap_logo  {
+    margin: 45px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.left_navbar {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 15rem;
+
+}
+
+.nav_icons {
+    display: flex;
+    gap: 2rem;
+    margin: 45px;
+    padding: 0;
+    list-style: none;
+    color: #4c4c4c;
+    text-decoration: none;
+}
+
+.nav_icons li a{
+    color: #4c4c4c;
+    text-decoration: none;
+   }
+
+.features_dropdown {
+
+}
